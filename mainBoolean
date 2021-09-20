@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int matematik, fizik, turkce, kimya;
+        double ortalama;
+        Scanner imp = new Scanner(System.in);
+        System.out.println("Matematik kodunuzu giriniz");
+        matematik = imp.nextInt();
+        System.out.println("Fizik notunuzu giriniz");
+        fizik = imp.nextInt();
+        System.out.println("Türkçe notunuzu giriniz");
+        turkce = imp.nextInt();
+        System.out.println("Kimya notunuzu giriniz");
+        kimya = imp.nextInt();
+        ortalama = (matematik + kimya + fizik + turkce) / 4;
+        System.out.println("Not ortalamanız\t:" + ortalama);
+        boolean sonuc=ortalama<60;
+        System.out.println(sonuc? "kaldı":"Geçti");
+    }
+}
